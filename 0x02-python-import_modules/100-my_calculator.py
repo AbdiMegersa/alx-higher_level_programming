@@ -13,9 +13,9 @@ if __name__ == "__main__":
     b = int(arg[3])
     if arg[2] == '+':
         print("{:d} {} {:d} = {:d}".format(a, arg[2], b, add(a, b)))
-    if arg[2] == '-':
+    elif arg[2] == '-':
         print("{:d} {} {:d} = {:d}".format(a, arg[2], b, sub(a, b)))
-    if arg[2] == '*':
+    elif arg[2] == '*':
         print("{:d} {} {:d} = {:d}".format(a, arg[2], b, mul(a, b)))
-    if arg[2] == '/':
+    elif arg[2] == '/':
         print("{:d} {} {:d} = {:d}".format(a, argt[2], b, div(a, b)))
