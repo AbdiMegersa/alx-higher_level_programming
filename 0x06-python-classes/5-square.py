@@ -43,7 +43,13 @@ class Square:
         self.__size = value
 
     def my_print(self):
-        if (size == 0):
-            print('\n')
+        """
+        Print a square with the character #
+        """
+        if self.__size == 0:
+            print()
         else:
-            printf("#:{}".format(self.__size ** 2))
+            for row in range(self.__size):
+                for column in range(self.__size):
+                    print("#", end="")
+
